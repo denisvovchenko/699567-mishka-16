@@ -12,22 +12,23 @@
           <img class="logo__img" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип магазина Мишка">
         </picture>
       </a>
+
       <nav class="page-header__nav nav">
         <button class="nav__toggle js-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="/catalog.html">Каталог товаров</a>
+            <a class="nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="/form.html">Вязание на заказ</a>
+            <a class="nav__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Поиск по сайту</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Корзина: <span class="cart__product-count">пока пуста</span></a>
+            <a class="nav__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -51,8 +52,8 @@
       <h1 class="visually-hidden">Магазин детских игрушек и товаров для дома "Мишка"</h1>
 
       <section class="top-product">
-        <h3 class="top-product__name">Вязаные корзинки</h3>
         <h2 class="top-product__title">Товар недели</h2>
+        <h3 class="top-product__name">Вязаные корзинки</h3>
         <p class="top-product__text">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
@@ -80,7 +81,7 @@
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item about-us__item--eco">Экологическичистые материалы</li>
+          <li class="about-us__item about-us__item--eco">Экологически чистые материалы</li>
           <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
           <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
           <li class="about-us__item about-us__item--handmade">Связано вручную с любовью и умилением</li>
@@ -89,28 +90,58 @@
         </ul>
       </section>
 
-      <section class="reviews"></section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <p class="reviews__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+        </p>
+        <p class="reviews__author">Анастасия Красильникова</p>
+        <p class="reviews__author-nickname">@misssssiskras</p>
+        <div class="reviews__controls controls">
+          <button class="controls__btn controls__btn--prev js-controls__btn--prev btn" type="button">
+            <span class="visually-hidden">Предыдущий комментарий</span>
+          </button>
+          <button class="controls__btn controls__btn--next js-controls__btn--next btn" type="button">
+            <span class="visually-hidden">Следующий комментарий</span>
+          </button>
+        </div>
+        <a class="reviews__btn btn" href="#">Написать</a>
+      </section>
 
-      <section class="contact"></section>
-
-      <section class="map"></section>
+      <section class="contact">
+        <h2 class="contact__title"></h2>
+        <table>
+          <tr>
+            <td>e-mail:</td>
+            <td>
+              <a class="contact__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </td>
+          </tr>
+          <tr>
+            <td>адрес:</td>
+            <td>г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,офис 101</td>
+          </tr>
+        </table>
+        <div class="contact__map map"></div>
+        <a class="contact__link" href="#">Напишите нам</a>
+      </section>
     </main>
 
     <footer class="page-footer">
       <section class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
+            <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
+            <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">
+            <a class="social__link social__link--vk" href="https://vk.com" target="_blank">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
@@ -119,7 +150,7 @@
 
       <section class="page-footer__copyright copyright">
         Разработано
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <img class="copyright__logo" src="http://placehold.it/150x100" width="27" height="34" alt="Логотип HTML Academy">
           <span class="visually-hidden">HTML Academy</span>
         </a>
