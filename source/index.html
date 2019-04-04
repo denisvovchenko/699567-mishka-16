@@ -57,7 +57,7 @@
         <p class="top-product__text">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
-        <table class="top-product__descr">
+        <table class="top-product__description">
           <tr>
             <td>Цвет:</td>
             <td>«Тиффани»/серый</td>
@@ -75,7 +75,7 @@
           <img class="top-product__img" src="http://placehold.it/150x100" width="260" height="315" alt="Вязаные корзинки">
         </picture>
         <p class="top-product__price">Цена: 990 руб.</p>
-        <a class="top-product__btn btn js-top-product__open-modal" href="#">Заказать</a>
+        <a class="top-product__btn js-top-product__open-modal btn" href="#">Заказать</a>
       </section>
 
       <section class="about-us">
@@ -92,34 +92,40 @@
 
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <p class="reviews__text">
-          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-        </p>
-        <p class="reviews__author">Анастасия Красильникова</p>
-        <p class="reviews__author-nickname">@misssssiskras</p>
-        <div class="reviews__controls controls">
-          <button class="controls__btn controls__btn--prev js-controls__btn--prev btn" type="button">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <p class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <p class="reviews__author">Анастасия Красильникова</p>
+            <p class="reviews__author-nickname">@misssssiskras</p>
+          </li>
+        </ul>
+        <div class="reviews__controls">
+          <button class="reviews__btn reviews__btn--prev js-reviews__btn--prev" type="button">
             <span class="visually-hidden">Предыдущий комментарий</span>
           </button>
-          <button class="controls__btn controls__btn--next js-controls__btn--next btn" type="button">
+          <button class="reviews__btn reviews__btn--next js-reviews__btn--next" type="button">
             <span class="visually-hidden">Следующий комментарий</span>
           </button>
         </div>
-        <a class="reviews__btn btn" href="#">Написать</a>
+        <a class="reviews__main-btn btn" href="#">Написать</a>
       </section>
 
       <section class="contact">
         <h2 class="contact__title"></h2>
-        <table>
+        <table class="contact__description">
           <tr>
-            <td>e-mail:</td>
-            <td>
+            <td class="contact__key">e-mail:</td>
+            <td class="contact__value">
               <a class="contact__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </td>
           </tr>
           <tr>
-            <td>адрес:</td>
-            <td>г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,офис 101</td>
+            <td class="contact__key">адрес:</td>
+            <td class="contact__value">
+              <address>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,офис 101</address>
+            </td>
           </tr>
         </table>
         <div class="contact__map map"></div>
@@ -132,27 +138,27 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">
-              <span class="visually-hidden">Инстаграм</span>
+              <span class="visually-hidden">Переход на аккаунт в Инстаграме</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">
-              <span class="visually-hidden">Фейсбук</span>
+              <span class="visually-hidden">Переход на аккаунт в Фейсбуке</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com" target="_blank">
-              <span class="visually-hidden">Вконтакте</span>
+              <span class="visually-hidden">Переход на аккаунт Вконтакте</span>
             </a>
           </li>
         </ul>
       </section>
 
       <section class="page-footer__copyright copyright">
-        Разработано
+        <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <img class="copyright__logo" src="http://placehold.it/150x100" width="27" height="34" alt="Логотип HTML Academy">
-          <span class="visually-hidden">HTML Academy</span>
+          <span class="visually-hidden">Переход на страницу разработчика</span>
         </a>
       </section>
     </footer>
