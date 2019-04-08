@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans.woff') format('woff'),
+       url('../fonts/opensans.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensansbold.woff') format('woff'),
+       url('../fonts/opensansbold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+@import './variables.scss';
+@import './mixins.scss';
+
+@import 'blocks/page.scss';
+
+@import 'blocks/visually-hidden.scss';
+
+@import 'blocks/page-header.scss';
+
+@import 'blocks/logo.scss';
+
+@import 'blocks/nav.scss';
+
+@import 'blocks/divisions.scss';
