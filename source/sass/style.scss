@@ -1,18 +1,7 @@
 @import "./fonts.scss";
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 @import "./variables.scss";
 @import "./mixins.scss";
-@import "blocks/page.scss";
+@import "./scaffolding.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/logo.scss";
