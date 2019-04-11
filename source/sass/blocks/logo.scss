@@ -1,0 +1,12 @@
+.logo {
+  @include hover-opacity;
+  @include active-opacity;
+
+  display: block;
+
+  @include size(86px, 35px);
+}
+
+.page-header__logo {
+  margin: 0 auto;
+}

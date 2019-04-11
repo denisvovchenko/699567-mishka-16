@@ -1,0 +1,54 @@
+@mixin size($width: 20px, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin hover-opacity {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+@mixin active-opacity {
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin center-x {
+  left: 50% ;
+
+  transform: translate(-50%);
+}
+
+@mixin center-y {
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+@mixin center($top: 50%, $left: $top, $x: -50%, $y: x) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+@mixin pseudo {
+  content: "";
+  position: absolute;
+}
+
+@mixin listReset {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+@mixin resetButton {
+  background: none;
+  border: none;
+}

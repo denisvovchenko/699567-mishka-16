@@ -1,0 +1,62 @@
+.nav__toggle {
+  position: absolute;
+  top: 50%;
+  right: 31px;
+  z-index: 1;
+
+  @include size(30px);
+  padding: 0;
+
+  background: url("../img/icon-menu-open.svg") no-repeat center;
+  border: none;
+  cursor: pointer;
+
+  transform: translateY(-50%);
+
+  &:focus,
+  &:active {
+    outline-offset: 5px;
+  }
+
+  &--close {
+    @include size(30px);
+
+    background-image: url("../img/icon-menu-close.svg");
+  }
+}
+
+.nav__list {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 1px);
+  z-index: 1;
+
+  display: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  background: $lightText;
+  list-style: none;
+
+  &--show {
+    display: block;
+  }
+}
+
+.nav__link {
+  @include hover-opacity;
+  @include active-opacity;
+
+  display: block;
+  padding: 28px 0 31px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+
+  color: $darkText;
+  border-bottom: 1px solid $lightBorderColor;
+}

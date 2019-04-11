@@ -1,0 +1,64 @@
+.reviews {
+  padding: 27px 30px 0;
+}
+
+.reviews__title {
+  margin-bottom: 23px;
+}
+
+.reviews__list {
+  @include listReset;
+}
+
+.reviews__text {
+  margin: 0 0 30px;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+
+  color: $grayText;
+}
+
+.reviews__author {
+  margin: 0 0 5px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+
+  color: $darkText;
+}
+
+.reviews__author-nickname {
+  margin: 0 0 30px;
+
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+
+  color: $grayText;
+}
+
+.reviews__controls {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.reviews__btn {
+  &--prev {
+    border-right: 0;
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  @include resetButton;
+
+  flex-basis: 50%;
+  height: 52px;
+
+  background: url("../img/icon-left-arrow.svg") no-repeat center;
+  border: 1px solid $lightBorderColor;
+}
