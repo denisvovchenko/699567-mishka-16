@@ -1,0 +1,86 @@
+.about-us {
+  padding: 30px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+
+  color: $darkText;
+}
+
+.about-us__title {
+  margin: 0 0 30px;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about-us__list {
+  @include listReset;
+}
+
+.about-us__item {
+  &::before {
+    @include pseudo;
+    top: 0;
+    left: 0;
+
+    background-position: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--eco::before {
+    left: 8px;
+
+    @include size(32px, 37px);
+
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--style::before {
+    @include size(47px, 27px);
+
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--likes::before {
+    left: 7px;
+
+    @include size(34px, 27px);
+
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--handmade::before {
+    left: 3px;
+
+    @include size(35px, 34px);
+
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--support::before {
+    left: -6px;
+
+    @include size(55px, 23px);
+
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--package::before {
+    left: 3px;
+
+    @include size(33px, 32px);
+
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  position: relative;
+
+  padding-top: 53px;
+  margin-bottom: 30px;
+}

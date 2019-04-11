@@ -1,0 +1,15 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $grayText;
+  border: 2px solid $grayText;
+}
