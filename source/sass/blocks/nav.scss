@@ -36,7 +36,7 @@
   padding: 0;
   margin: 0;
 
-  background: #ffffff;
+  background: $lightText;
   list-style: none;
 
   &--show {
@@ -51,13 +51,12 @@
   display: block;
   padding: 28px 0 31px;
 
-  font-family: $font;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
   text-decoration: none;
 
-  color: #000000;
-  border-bottom: 1px solid #ececec;
+  color: $darkText;
+  border-bottom: 1px solid $lightBorderColor;
 }

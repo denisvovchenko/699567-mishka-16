@@ -1,7 +1,3 @@
-.divisions {
-  font-family: $font;
-}
-
 .divisions__list {
   padding: 0;
   margin: 0;
@@ -20,7 +16,7 @@
   line-height: 24px;
   text-decoration: none;
 
-  color: #ffffff;
+  color: $lightText;
   background-color: #63d1bb;
 
   &::before {
