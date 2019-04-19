@@ -1,0 +1,37 @@
+.social {
+  padding: 25px 0 21px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include listReset;
+
+}
+
+.social__item {
+  &:last-child {
+    margin-right: 0;
+  }
+
+  margin-right: 40px;
+}
+
+.social__link {
+  position: relative;
+
+  &--instagram {
+
+  }
+
+  &--facebook {
+
+  }
+
+  &--vk {
+
+  }
+}

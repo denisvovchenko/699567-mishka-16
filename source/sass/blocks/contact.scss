@@ -1,0 +1,71 @@
+.contact {
+  padding: 36px 0 40px;
+}
+
+.contact__container {
+  padding: 0 30px;
+}
+
+.contact__title {
+  margin-bottom: 26px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.contact__description {
+  margin-bottom: 37px;
+  font-size: 15px;
+  line-height: 30px;
+
+  color: $grayText;
+}
+
+.contact__email {
+  @include customUnderline(#62d1ba);
+
+  position: relative;
+
+  display: inline-block;
+
+  text-decoration: none;
+
+  color: $grayText;
+}
+
+.contact__key {
+  min-width: 75px;
+  padding-bottom: 30px;
+
+  vertical-align: top;
+}
+
+.contact__value {
+  vertical-align: top;
+}
+
+.contact__address {
+  font-style: normal;
+}
+
+.contact__map {
+  position: relative;
+
+  margin-bottom: 39px;
+
+  &::after {
+    content: "";
+    @include center(195px, 171px);
+
+    @include size(67px, 100px);
+
+    background: url("../img/icon-map-pin.svg") no-repeat center;
+  }
+}
+
+.contact__map-img {
+  display: block;
+  height: 457px;
+  object-fit: cover;
+}

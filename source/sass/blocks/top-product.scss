@@ -1,16 +1,5 @@
 .top-product {
-  &::after {
-    @include pseudo;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 6px;
-
-    background: url("../img/bg-zigzag-line.svg") repeat-x;
-    background-size: contain;
-  }
+  @include zigzagLine;
 
   position: relative;
 
