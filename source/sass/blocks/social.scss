@@ -9,7 +9,6 @@
   justify-content: center;
   align-items: center;
   @include listReset;
-
 }
 
 .social__item {
@@ -18,20 +17,4 @@
   }
 
   margin-right: 40px;
-}
-
-.social__link {
-  position: relative;
-
-  &--instagram {
-
-  }
-
-  &--facebook {
-
-  }
-
-  &--vk {
-
-  }
 }
