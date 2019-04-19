@@ -56,8 +56,8 @@
 
   &::after {
     content: "";
-    @include center(195px, 171px);
 
+    @include center(195px, 171px);
     @include size(67px, 100px);
 
     background: url("../img/icon-map-pin.svg") no-repeat center;
