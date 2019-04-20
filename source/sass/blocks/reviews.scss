@@ -7,7 +7,7 @@
 }
 
 .reviews__title {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .reviews__list {
@@ -15,7 +15,7 @@
 }
 
 .reviews__text {
-  margin: 0 0 28px;
+  margin: 0 0 27px;
 
   font-size: 15px;
   font-weight: 400;
@@ -35,7 +35,7 @@
 }
 
 .reviews__author-nickname {
-  margin: 0 0 30px;
+  margin: 0 0 29px;
 
   font-size: 17px;
   font-weight: 400;
@@ -45,14 +45,26 @@
 }
 
 .reviews__controls {
+  &::before {
+    content: "";
+
+    @include center(0, 50%, -50%, 0);
+    @include size(1px, 100%);
+
+    background-color: $lightBorderColor;
+  }
+
+  position: relative;
+
   display: flex;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
+
+  border: 1px solid $lightBorderColor;
 }
 
 .reviews__btn {
-  &--prev {
-    border-right: 0;
-  }
+  @include hoverOpacity;
+  @include activeOpacity;
 
   &--next {
     transform: rotate(180deg);
@@ -61,8 +73,9 @@
   @include resetButton;
 
   flex-basis: 50%;
-  height: 52px;
+  height: 50px;
+  padding: 0;
 
   background: url("../img/icon-left-arrow.svg") no-repeat center;
-  border: 1px solid $lightBorderColor;
+  cursor: pointer;
 }

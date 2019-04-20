@@ -19,3 +19,16 @@
 
   margin-right: 40px;
 }
+
+.social__link {
+  &:active {
+    opacity: $activeOpacity;
+  }
+}
+
+.social__icon {
+  .social__link:hover &,
+  .social__link:active & {
+    fill: $mainColorDarker;
+  }
+}

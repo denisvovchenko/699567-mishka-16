@@ -2,10 +2,17 @@
   padding: 20px 0 25px;
 }
 
-.copyright {
+.copyright__link {
+  &:active {
+    opacity: $activeOpacity;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+
+  color: $darkText;
 }
 
 .copyright__text {
@@ -16,10 +23,15 @@
   line-height: 25px;
 }
 
-.copyright__link {
+.copyright__icon {
   @include size(27px, 34px);
 }
 
-.copyright__icon {
-  fill: #63d1bb;
+.copyright__icon-content {
+  fill: $mainColor;
+
+  .copyright__link:hover &,
+  .copyright__link:active {
+    fill: $mainColorDarker;
+  }
 }

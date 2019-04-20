@@ -13,11 +13,6 @@
 
   transform: translateY(-50%);
 
-  &:focus,
-  &:active {
-    outline-offset: 5px;
-  }
-
   &--close {
     @include size(30px);
 
@@ -45,11 +40,18 @@
 }
 
 .nav__link {
-  @include hover-opacity;
-  @include active-opacity;
+  &:hover {
+    color: rgba($darkText, $hoverOpacity);
+  }
+
+  &:active {
+    color: rgba($darkText, $activeOpacity);
+  }
+
+  position: relative;
 
   display: block;
-  padding: 28px 0 31px;
+  padding: 26px 0 28px;
 
   font-size: 17px;
   font-weight: 700;
@@ -60,3 +62,30 @@
   color: $darkText;
   border-bottom: 1px solid $lightBorderColor;
 }
+
+.nav__icon {
+  @include center-y;
+
+  left: 32px;
+
+  opacity: 0.2;
+
+  .nav__link:hover & {
+    opacity: 1;
+  }
+
+  .nav__link:active & {
+    opacity: $activeOpacity;
+  }
+}
+
+.nav__icon-content {
+  fill: $darkText;
+
+  .nav__link:hover &,
+  .nav__link:active & {
+    fill: $mainColor;
+  }
+}
+
+

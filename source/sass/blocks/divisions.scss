@@ -6,6 +6,36 @@
 }
 
 .divisions__link {
+  &:hover {
+    &::before {
+      opacity: 0.7;
+    }
+
+    padding-bottom: 35px;
+    margin-bottom: -5px;
+
+    background-color: #59d5bc;
+
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+
+    color: rgba($lightText, $activeOpacity);
+  }
+
+  &::before {
+    @include pseudo;
+    top: 23px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+  }
+
   position: relative;
 
   display: block;
@@ -17,16 +47,7 @@
   text-decoration: none;
 
   color: $lightText;
-  background-color: #63d1bb;
-
-  &::before {
-    @include pseudo;
-    top: 23px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
-  }
+  background-color: $mainColor;
 
   &--interior {
     &::before {
@@ -40,6 +61,11 @@
 
   &--toys {
     background-color: #56c3b2;
+
+    &:hover,
+    &:focus {
+      background-color: $mainColorDarker;
+    }
 
     &::before {
       right: 27px;

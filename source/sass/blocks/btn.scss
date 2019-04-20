@@ -1,4 +1,14 @@
 .btn {
+  &:hover {
+    color: $lightText;
+    background-color: $grayText;
+  }
+
+  &:active {
+    color: rgba($lightText, $activeOpacity);
+    background-color: $grayText;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;

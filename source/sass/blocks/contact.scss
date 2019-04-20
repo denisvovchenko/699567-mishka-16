@@ -23,6 +23,22 @@
 }
 
 .contact__email {
+  &:hover {
+    &::after {
+      background-color: $mainColorDarker;
+    }
+
+    color: $mainColorDarker;
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.8;
+    }
+
+    opacity: $activeOpacity;
+  }
+
   @include customUnderline(#62d1ba);
 
   position: relative;

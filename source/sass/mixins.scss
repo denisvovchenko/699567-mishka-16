@@ -3,26 +3,27 @@
   height: $height;
 }
 
-@mixin hover-opacity {
-  &:hover,
-  &:focus {
-    opacity: 0.6;
+@mixin hoverOpacity {
+  &:hover {
+    opacity: $hoverOpacity;
   }
 }
 
-@mixin active-opacity {
+@mixin activeOpacity {
   &:active {
-    opacity: 0.3;
+    opacity: $activeOpacity;
   }
 }
 
 @mixin center-x {
+  position: absolute;
   left: 50%;
 
   transform: translate(-50%);
 }
 
 @mixin center-y {
+  position: absolute;
   top: 50%;
 
   transform: translateY(-50%);
