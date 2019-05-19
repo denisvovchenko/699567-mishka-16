@@ -1,0 +1,37 @@
+.page-footer__copyright {
+  padding: 20px 0 25px;
+}
+
+.copyright__link {
+  &:active {
+    opacity: $activeOpacity;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  color: $darkText;
+}
+
+.copyright__text {
+  margin-right: 25px;
+
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.copyright__icon {
+  @include size(27px, 34px);
+}
+
+.copyright__icon-content {
+  fill: $mainColor;
+
+  .copyright__link:hover &,
+  .copyright__link:active {
+    fill: $mainColorDarker;
+  }
+}

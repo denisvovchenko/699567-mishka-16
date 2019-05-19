@@ -1,10 +1,12 @@
 .logo {
-  @include hover-opacity;
-  @include active-opacity;
-
   display: block;
 
   @include size(86px, 35px);
+}
+
+.logo[href] {
+  @include hoverOpacity;
+  @include activeOpacity;
 }
 
 .page-header__logo {
