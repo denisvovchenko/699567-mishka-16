@@ -2,10 +2,6 @@
   padding: 36px 0 40px;
 }
 
-.contact__container {
-  padding: 0 30px;
-}
-
 .contact__title {
   margin-bottom: 26px;
 
@@ -76,7 +72,7 @@
     @include center(195px, 171px);
     @include size(67px, 100px);
 
-    background: url("../img/icon-map-pin.svg") no-repeat center;
+    background: url("../img/svg/icon-map-pin.svg") no-repeat center;
   }
 }
 

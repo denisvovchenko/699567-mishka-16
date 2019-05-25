@@ -1,0 +1,12 @@
+.catalog {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.catalog__list {
+  @include listReset;
+}
+
+.catalog__item {
+  padding: 30px 0 0;
+}

@@ -1,0 +1,95 @@
+.product {
+  &:hover {
+    box-shadow: 0 6px 10px rgba(#000000, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(#000000, 0.1);
+  }
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.product__img-link {
+  display: block;
+}
+
+.product__img {
+  display: block;
+}
+
+.product__body {
+  padding: 26px 27px 4px;
+
+  border: 1px solid #ededed;
+}
+
+.product__name-link {
+  @include hoverOpacity;
+  @include activeOpacity;
+
+  display: block;
+  margin-bottom: 5px;
+
+  text-decoration: none;
+
+  color: $darkText;
+}
+
+.product__name {
+  margin: 0;
+
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.product__description {
+  margin: 0 0 20px;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.product__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 0;
+
+  border-top: 1px solid $lightBorderColor;
+}
+
+.product__price {
+  margin: 0;
+
+  font-size: 15px;
+}
+
+.product__btn {
+  @include resetButton;
+  @include size(30px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.product__svg {
+  opacity: 0.2;
+
+  .product__btn:hover & {
+    opacity: 1;
+    fill: $mainColor;
+  }
+
+  .product__btn:active & {
+    fill: $mainColor;
+    opacity: 0.3;
+  }
+}
