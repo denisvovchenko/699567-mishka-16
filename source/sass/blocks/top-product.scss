@@ -3,14 +3,17 @@
 
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-  padding: 27px 30px 42px;
+  padding: 0 0 42px;
 
   font-size: 15px;
   font-weight: 400;
 
   color: $grayText;
+}
+
+.top-product__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .top-product__title {
@@ -63,6 +66,8 @@
 }
 
 .top-product__picture {
+  display: block;
+
   @include size(260px, 315px);
 
   margin-bottom: 24px;

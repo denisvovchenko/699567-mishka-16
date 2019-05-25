@@ -7,11 +7,7 @@
 
 .divisions__link {
   &:hover {
-    &::before {
-      opacity: 0.7;
-    }
-
-    padding-bottom: 35px;
+    padding-bottom: 5px;
     margin-bottom: -5px;
 
     background-color: #59d5bc;
@@ -20,26 +16,12 @@
   }
 
   &:active {
-    &::before {
-      opacity: 0.3;
-    }
-
     color: rgba($lightText, $activeOpacity);
-  }
-
-  &::before {
-    @include pseudo;
-    top: 23px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
   }
 
   position: relative;
 
   display: block;
-  padding: 25px 130px 30px 30px;
 
   font-size: 19px;
   font-weight: 700;
@@ -49,16 +31,6 @@
   color: $lightText;
   background-color: $mainColor;
 
-  &--interior {
-    &::before {
-      right: 36px;
-
-      @include size(40px, 62px);
-
-      background-image: url("../img/icon-interior.svg");
-    }
-  }
-
   &--toys {
     background-color: #56c3b2;
 
@@ -66,13 +38,48 @@
     &:focus {
       background-color: $mainColorDarker;
     }
+  }
+}
 
+.divisions__text {
+  &::before {
+    @include pseudo;
+    top: 23px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+
+    .divisions__link:hover & {
+      opacity: 0.7;
+    }
+
+    .divisions__link:active & {
+      opacity: 0.3;
+    }
+  }
+
+  position: relative;
+  max-width: 260px;
+  padding: 25px 85px 30px 0;
+
+  &--interior {
     &::before {
-      right: 27px;
+      right: 6px;
+
+      @include size(40px, 62px);
+
+      background-image: url("../img/svg/icon-interior.svg");
+    }
+  }
+
+  &--toys {
+    &::before {
+      right: -3px;
 
       @include size(60px);
 
-      background-image: url("../img/icon-toy.svg");
+      background-image: url("../img/svg/icon-toy.svg");
     }
   }
 }

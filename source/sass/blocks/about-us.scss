@@ -1,5 +1,5 @@
 .about-us {
-  padding: 27px 30px 30px;
+  padding: 27px 0 30px;
 
   font-size: 17px;
   font-weight: 700;
@@ -16,7 +16,7 @@
 }
 
 .about-us__list {
-  @include listReset;
+  @include resetList;
 }
 
 .about-us__item {
@@ -34,13 +34,13 @@
 
     @include size(32px, 37px);
 
-    background-image: url("../img/icon-feature-flower.svg");
+    background-image: url("../img/svg/icon-feature-flower.svg");
   }
 
   &--style::before {
     @include size(47px, 27px);
 
-    background-image: url("../img/icon-feature-money.svg");
+    background-image: url("../img/svg/icon-feature-money.svg");
   }
 
   &--likes::before {
@@ -48,7 +48,7 @@
 
     @include size(34px, 27px);
 
-    background-image: url("../img/icon-feature-heart.svg");
+    background-image: url("../img/svg/icon-feature-heart.svg");
   }
 
   &--handmade::before {
@@ -56,7 +56,7 @@
 
     @include size(35px, 34px);
 
-    background-image: url("../img/icon-feature-ball.svg");
+    background-image: url("../img/svg/icon-feature-ball.svg");
   }
 
   &--support::before {
@@ -64,7 +64,7 @@
 
     @include size(55px, 23px);
 
-    background-image: url("../img/icon-feature-rocket.svg");
+    background-image: url("../img/svg/icon-feature-rocket.svg");
   }
 
   &--package::before {
@@ -72,7 +72,7 @@
 
     @include size(33px, 32px);
 
-    background-image: url("../img/icon-feature-gift.svg");
+    background-image: url("../img/svg/icon-feature-gift.svg");
   }
 
   &:last-child {

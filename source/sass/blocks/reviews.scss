@@ -3,7 +3,7 @@
 
   position: relative;
 
-  padding: 25px 30px 50px;
+  padding: 25px 0 50px;
 }
 
 .reviews__title {
@@ -11,7 +11,7 @@
 }
 
 .reviews__list {
-  @include listReset;
+  @include resetList;
 }
 
 .reviews__text {
@@ -76,6 +76,6 @@
   height: 50px;
   padding: 0;
 
-  background: url("../img/icon-left-arrow.svg") no-repeat center;
+  background: url("../img/svg/icon-left-arrow.svg") no-repeat center;
   cursor: pointer;
 }

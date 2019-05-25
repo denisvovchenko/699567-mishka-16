@@ -1,4 +1,4 @@
-/* Common */
+// Service
 @import "./fonts.scss";
 @import "./variables.scss";
 @import "./mixins.scss";
@@ -6,15 +6,29 @@
 @import "blocks/block-title.scss";
 @import "blocks/btn.scss";
 @import "blocks/visually-hidden.scss";
-/* Blocks */
-@import "blocks/about-us.scss";
-@import "blocks/contact.scss";
+@import "blocks/container.scss";
+
+// Common
 @import "blocks/copyright.scss";
-@import "blocks/divisions.scss";
 @import "blocks/logo.scss";
+@import "blocks/page-main.scss";
 @import "blocks/nav.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
-@import "blocks/reviews.scss";
+@import "blocks/page-title.scss";
 @import "blocks/social.scss";
+
+// Index
+@import "blocks/divisions.scss";
+@import "blocks/contact.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
 @import "blocks/top-product.scss";
+
+// Catalog
+@import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/production.scss";
+
+// Form
+@import "blocks/form.scss";

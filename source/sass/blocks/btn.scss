@@ -13,13 +13,17 @@
   justify-content: center;
   align-items: center;
   min-height: 52px;
+  padding: 10px;
 
   font-size: 18px;
-  line-height: 20px;
+  line-height: 28px;
   font-weight: 700;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
   color: $grayText;
   border: 2px solid $grayText;
+
+  @include transition;
 }

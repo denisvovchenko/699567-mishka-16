@@ -14,7 +14,8 @@ body {
   font-family: $font;
 }
 
-img {
+img,
+video {
   width: 100%;
   height: auto;
 }
@@ -25,4 +26,8 @@ table {
 
 td {
   padding: 0;
+}
+
+::-webkit-input-placeholder {
+  color: rgba($grayText, 0.3);
 }
