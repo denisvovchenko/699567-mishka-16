@@ -3,7 +3,7 @@
 
   position: relative;
 
-  padding: 27px 0 42px;
+  padding: 0 0 42px;
 
   font-size: 15px;
   font-weight: 400;
@@ -67,6 +67,7 @@
 
 .top-product__picture {
   display: block;
+
   @include size(260px, 315px);
 
   margin-bottom: 24px;

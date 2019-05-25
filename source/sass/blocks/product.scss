@@ -66,6 +66,11 @@
 }
 
 .product__btn {
+  &:focus {
+    outline: 1px solid $mainColor;
+    outline-offset: 3px;
+  }
+
   @include resetButton;
   @include size(20px);
 

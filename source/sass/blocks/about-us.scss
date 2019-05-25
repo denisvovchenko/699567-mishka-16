@@ -16,7 +16,7 @@
 }
 
 .about-us__list {
-  @include listReset;
+  @include resetList;
 }
 
 .about-us__item {
