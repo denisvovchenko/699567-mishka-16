@@ -1,0 +1,13 @@
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 176px;
+  margin: 0;
+
+  font-size: 27px;
+  line-height: 30px;
+
+  color: $darkText;
+  background-color: #f1f1f1;
+}

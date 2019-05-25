@@ -1,9 +1,18 @@
 $font: "Open Sans", "Arial", sans-serif;
+
 $grayText: #444444;
 $darkText: #000000;
 $lightText: #ffffff;
 $lightBorderColor: #ececec;
 $mainColor: #63d1bb;
 $mainColorDarker: #46c1ae;
+
 $hoverOpacity: 0.6;
 $activeOpacity: 0.3;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+$mobile-pads: 30px;
+$tablet-pads: 50px;

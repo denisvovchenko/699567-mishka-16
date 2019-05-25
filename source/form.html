@@ -1,42 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+  <include src="source/components/head.html"></include>
 
-    <title>Форма заказа</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+  <title>Форма заказа</title>
+</head>
 
-<body>
+<body class="page page--form">
+  <include src="source/components/sprite.html"></include>
 
   <header class="page-header">
-    <a class="page-header__logo logo" href="index.html">
-      <picture>
-        <img class="logo__img" src="http://placehold.it/150x100" width="86" height="35" alt="Логотип магазина Мишка">
-      </picture>
-    </a>
-
-    <nav class="page-header__nav nav">
-      <button class="nav__toggle js-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav__link--current">Вязание на заказ</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Поиск по сайту</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="page-header__top">
+      <include src="source/components/logo.html"></include>
+      <include src="source/components/nav.html"></include>
+    </div>
 
     <h1 class="page-title">Вязание на заказ</h1>
   </header>
@@ -144,36 +121,9 @@
     </form>
   </main>
 
-  <footer class="page-footer">
-    <section class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">
-            <span class="visually-hidden">Переход на аккаунт в Инстаграме</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">
-            <span class="visually-hidden">Переход на аккаунт в Фейсбуке</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com" target="_blank">
-            <span class="visually-hidden">Переход на аккаунт Вконтакте</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+  <inlude src="source/components/footer.html"></inlude>
 
-    <section class="page-footer__copyright copyright">
-      <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <img class="copyright__logo" src="http://placehold.it/150x100" width="27" height="34" alt="Логотип HTML Academy">
-        <span class="visually-hidden">Переход на страницу разработчика</span>
-      </a>
-    </section>
-  </footer>
-
+  <include src="source/components/scripts.html"></include>
 </body>
 
 </html>
