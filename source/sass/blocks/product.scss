@@ -1,11 +1,5 @@
 .product {
-  &:hover {
-    box-shadow: 0 6px 10px rgba(#000000, 0.1);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px rgba(#000000, 0.1);
-  }
+  @include cardActions;
 
   font-size: 17px;
   font-weight: 700;
