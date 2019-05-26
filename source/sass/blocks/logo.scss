@@ -2,13 +2,13 @@
   display: block;
 
   @include size(86px, 35px);
+
+  @media (min-width: $tablet-width) {
+    @include size(113px, 46px);
+  }
 }
 
 .logo[href] {
   @include hoverOpacity;
   @include activeOpacity;
-}
-
-.page-header__logo {
-  margin: 0 auto;
 }
