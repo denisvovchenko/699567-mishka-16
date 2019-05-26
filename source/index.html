@@ -39,40 +39,47 @@
 
       <section class="top-product">
         <div class="top-product__container container">
-          <h2 class="top-product__title">Товар недели</h2>
-          <h3 class="top-product__name block-title">Вязаные корзинки</h3>
-          <p class="top-product__text">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="top-product__description">
-            <tr class="top-product__description-row">
-              <td class="top-product__key">Цвет:</td>
-              <td class="top-product__value">«Тиффани»/серый</td>
-            </tr>
-            <tr class="top-product__description-row">
-              <td class="top-product__key">Диаметр:</td>
-              <td class="top-product__value">25 см</td>
-            </tr>
-            <tr class="top-product__description-row">
-              <td class="top-product__key">Высота:</td>
-              <td class="top-product__value">15 см</td>
-            </tr>
-          </table>
-          <picture class="top-product__picture">
-            <img class="top-product__img" src="img/mobile/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-          </picture>
-          <p class="top-product__price">Цена: 990 руб.</p>
-          <a class="top-product__btn js-top-product__open-modal btn" href="#">Заказать</a>
+          <header class="top-product__header">
+            <h2 class="top-product__title">Товар недели</h2>
+            <h3 class="top-product__name block-title">Вязаные корзинки</h3>
+          </header>
+          <div class="top-product__body">
+            <p class="top-product__text">
+              Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="top-product__description">
+              <tr class="top-product__description-row">
+                <td class="top-product__key">Цвет:</td>
+                <td class="top-product__value">«Тиффани»/серый</td>
+              </tr>
+              <tr class="top-product__description-row">
+                <td class="top-product__key">Диаметр:</td>
+                <td class="top-product__value">25 см</td>
+              </tr>
+              <tr class="top-product__description-row">
+                <td class="top-product__key">Высота:</td>
+                <td class="top-product__value">15 см</td>
+              </tr>
+            </table>
+            <picture class="top-product__picture">
+              <source media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.jpg 1x, img/tablet/triple-set-tablet@2x.jpg 2x">
+              <img class="top-product__img" src="img/mobile/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+            </picture>
+            <p class="top-product__price">Цена: 990 руб.</p>
+            <a class="top-product__btn js-top-product__open-modal btn" href="#">Заказать</a>
+          </div>
         </div>
       </section>
 
       <section class="about-us">
-        <div class="container">
+        <div class="about-us__container container">
           <h2 class="about-us__title block-title">Коротко о нас:</h2>
           <ul class="about-us__list">
             <li class="about-us__item about-us__item--eco">Экологически<br> чистые материалы</li>
             <li class="about-us__item about-us__item--style">Скандинавский стиль<br> по российской цене</li>
             <li class="about-us__item about-us__item--likes">Увеличивает лайки<br> на фотографиях</li>
+          </ul>
+          <ul class="about-us__list">
             <li class="about-us__item about-us__item--handmade">Связано вручную с<br> любовью и умилением</li>
             <li class="about-us__item about-us__item--support">Поддержка отечественного производителя</li>
             <li class="about-us__item about-us__item--package">Поставляется в<br> подарочной упаковке</li>

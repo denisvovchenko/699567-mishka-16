@@ -1,9 +1,8 @@
 .page-main {
-  padding-top: 27px;
-  padding-bottom: 39px;
+  padding: 27px 0 39px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 57px;
+    padding: 45px 0 57px;
   }
 
   &--catalog {
