@@ -68,6 +68,10 @@
 
     background: url("../img/svg/bg-zigzag-line.svg") repeat-x;
     background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      height: 17px;
+    }
   }
 }
 

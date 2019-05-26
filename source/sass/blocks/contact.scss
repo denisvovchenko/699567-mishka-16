@@ -3,21 +3,25 @@
 
   padding: 36px 0 0;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+}
+
+.contact__info {
+  position: relative;
+
   &::before {
     @media (min-width: $tablet-width) {
       @include pseudo;
-      top: 45px;
-      right: 0;
+      top: -16px;
+      right: 3px;
 
       width: 47px;
       height: 81px;
 
       background: url("../img/svg/icon-flag.svg") no-repeat center;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 60px;
   }
 }
 
@@ -50,7 +54,9 @@
 }
 
 .contact__description tbody {
-  display: flex;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .contact__description tr {
