@@ -23,6 +23,7 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 61px;
+      padding-bottom: 50px;
     }
   }
 }
@@ -37,7 +38,7 @@
   color: $grayText;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 74px;
+    margin-bottom: 72px;
 
     font-size: 17px;
     line-height: 30px;
