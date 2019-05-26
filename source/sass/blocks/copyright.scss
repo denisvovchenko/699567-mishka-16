@@ -1,7 +1,6 @@
-.page-footer__copyright {
+.copyright {
   display: flex;
   justify-content: center;
-  padding: 20px 0 25px;
 }
 
 .copyright__link {
@@ -18,7 +17,7 @@
 }
 
 .copyright__text {
-  margin-right: 25px;
+  margin-right: 30px;
 
   font-size: 19px;
   font-weight: 700;
@@ -27,9 +26,7 @@
 
 .copyright__icon {
   @include size(27px, 34px);
-}
 
-.copyright__icon-content {
   fill: $mainColor;
 
   .copyright__link:hover &,

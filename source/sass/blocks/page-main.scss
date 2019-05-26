@@ -2,6 +2,10 @@
   padding-top: 27px;
   padding-bottom: 39px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+  }
+
   &--catalog {
     padding-top: 30px;
     padding-bottom: 58px;

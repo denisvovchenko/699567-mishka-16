@@ -26,4 +26,12 @@
   border: 2px solid $grayText;
 
   @include transition;
+
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+    margin: 0 auto;
+
+    font-size: 17px;
+    line-height: 20px;
+  }
 }
