@@ -1,14 +1,48 @@
 .form__group {
+  &::before {
+    @include pseudo;
+    top: 8px;
+    right: 0;
+
+    width: 198px;
+    height: 1px;
+
+    background-color: #62d1ba;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  position: relative;
+
   padding: 0;
-  margin: 0 0 33px;
+  margin: 0 0 32px;
 
   border: none;
-  border-top: 1px solid #62d1ba;
+  // border-top: 1px solid #62d1ba;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    // display: table-row;
+  }
+
+  &--radio {
+    margin-bottom: 44px;
+  }
+
+  &--checkbox {
+    margin-bottom: 42px;
+  }
+
+  &--name {
+    margin-bottom: 31px;
+  }
 }
 
-.form__legend {
+.form__group-title {
   padding: 0 27px 0 0;
-  margin-bottom: 22px;
+  margin: 0 0 34px;
 
   font-size: 17px;
   font-weight: 700;
@@ -16,10 +50,35 @@
   text-transform: uppercase;
 
   color: $mainColor;
+  background: #ffffff;
+
+  // @media (min-width: $tablet-width) {
+
+  // }
+
+  &--checkbox {
+    margin-bottom: 36px;
+  }
+
+  &--name {
+    margin-bottom: 22px;
+  }
+
+  &--no-label {
+    margin-bottom: 20px;
+  }
+
+  &--message {
+    margin-bottom: 25px;
+  }
 }
 
 .form__list {
   @include resetList;
+
+  // @media (min-width: $tablet-width) {
+
+  // }
 }
 
 .form__item {
@@ -27,7 +86,15 @@
     margin-bottom: 0;
   }
 
-  margin-bottom: 22px;
+  margin-bottom: 24px;
+
+  &--checkbox {
+    margin-bottom: 43px;
+  }
+
+  &--name {
+    margin-bottom: 15px;
+  }
 }
 
 .form__label {
@@ -49,15 +116,13 @@
   }
 
   &--custom {
-    min-height: 40px;
+    // min-height: 40px;
     padding: 0 0 0 62px;
     margin-bottom: 0;
 
     &::after {
       @include pseudo;
-      top: 0;
-      left: 0;
-
+      @include center(11px, 0, 0, -50%);
       @include size(40px);
 
       border: 2px solid $grayText;
@@ -69,6 +134,10 @@
     border-radius: 50%;
   }
 
+  &--checkbox::after {
+    top: 8px;
+  }
+
   .form__input--hidden:checked + & {
     &--radio::after {
       background-color: #62d1ba;
@@ -76,6 +145,8 @@
     }
 
     &--checkbox::after {
+      height: 39px;
+
       background: url("../img/svg/icon-tick.svg") no-repeat center;
       background-size: 22px 16px;
     }
@@ -111,7 +182,7 @@
   }
 
   width: 100%;
-  padding: 0 0 15px;
+  padding: 0 0 17px;
 
   font-size: 17px;
   font-weight: 400;
@@ -123,6 +194,7 @@
 
   &--icon {
     padding-right: 40px;
+    padding-bottom: 16px;
   }
 }
 
@@ -147,7 +219,7 @@
 }
 
 .form__extra {
-  margin: 11px 0 0;
+  margin: 11px 0 31px;
 
   font-size: 14px;
   line-height: 16px;

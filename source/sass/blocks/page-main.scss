@@ -19,16 +19,27 @@
 
   &--form {
     padding-top: 22px;
-    padding-bottom: 56px;
+    padding-bottom: 55px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 61px;
+    }
   }
 }
 
 .page-main__description {
-  margin: 0 0 21px;
+  margin: 0 0 24px;
 
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
 
   color: $grayText;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
