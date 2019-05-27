@@ -1,8 +1,8 @@
 .form__group {
   &::before {
     @include pseudo;
-    top: 8px;
-    right: 0;
+    top: 11px;
+    right: $mobile-pads;
 
     width: 198px;
     height: 1px;
@@ -20,7 +20,7 @@
 
   position: relative;
 
-  margin: 0 0 32px;
+  margin-bottom: 29px;
 
   border: none;
 
@@ -32,7 +32,7 @@
   }
 
   &--radio {
-    margin-bottom: 44px;
+    margin-bottom: 41px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 69px;
@@ -40,7 +40,7 @@
   }
 
   &--checkbox {
-    margin-bottom: 42px;
+    margin-bottom: 39px;
 
     @media (min-width: $tablet-width) {
       padding-top: 65px;
@@ -50,7 +50,7 @@
   }
 
   &--name {
-    margin-bottom: 31px;
+    margin-bottom: 28px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 50px;
@@ -78,10 +78,21 @@
       margin-bottom: 50px;
     }
   }
+
+  &--message {
+    margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 53px;
+    }
+  }
 }
 
 .form__group-title {
-  padding: 0 27px 0 0;
+  position: relative;
+
+  display: inline-block;
+  padding: 0;
   margin: 0 0 34px;
 
   font-size: 17px;
@@ -114,6 +125,10 @@
     @media (min-width: $tablet-width) {
       padding-top: 9px;
     }
+  }
+
+  &--mail {
+    padding-right: 23px;
   }
 
   &--no-label {
@@ -165,7 +180,9 @@
   }
 
   &--checkbox:nth-child(even) {
-    padding-left: 11px;
+    @media (min-width: $tablet-width) {
+      padding-left: 11px;
+    }
   }
 
   &--name {
@@ -282,6 +299,8 @@
   }
 
   &--name {
+    margin-bottom: 14px;
+
     @media (min-width: $tablet-width) {
       margin-right: 25px;
     }
@@ -296,7 +315,7 @@
   }
 
   width: 100%;
-  padding: 0 0 17px;
+  padding: 0 0 15px;
 
   font-size: 17px;
   font-weight: 400;
@@ -383,17 +402,21 @@
 }
 
 .form__icon {
-  @include center(50%, auto, 0, -50%);
+  position: absolute;
+  top: -2px;
 
   opacity: 0.2;
 
   pointer-events: none;
 
+  @media (min-width: $tablet-width) {
+    top: -4px;
+  }
+
   &--phone {
     right: 8px;
 
     @media (min-width: $tablet-width) {
-      top: 8px;
       right: 26px;
     }
   }
@@ -402,7 +425,6 @@
     right: -3px;
 
     @media (min-width: $tablet-width) {
-      top: 12px;
       right: 15px;
     }
   }

@@ -6,7 +6,7 @@
   padding: 25px 0 50px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 0 106px;
+    padding: 77px 0 103px;
 
     background: url("../img/review@1x.jpg") no-repeat left top;
   }
@@ -28,7 +28,7 @@
 
   @media (min-width: $tablet-width) {
     order: -2;
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 }
 
@@ -66,6 +66,8 @@
   color: $darkText;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+
     font-size: 18px;
   }
 }
@@ -104,7 +106,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 19px;
-    bottom: 31px;
+    bottom: 33px;
 
     justify-content: space-between;
     width: 137px;

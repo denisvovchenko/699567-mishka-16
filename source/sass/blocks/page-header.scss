@@ -40,6 +40,10 @@
   }
 }
 
+.page-header__top-container {
+  position: relative;
+}
+
 .page-header__body {
   background: $lightText url("../img/mobile/hero-mobile@1x.jpg") no-repeat top;
 

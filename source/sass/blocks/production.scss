@@ -20,7 +20,7 @@
   &::before {
     @include pseudo;
     @include center-y;
-    left: 3px;
+    left: 0;
 
     @include size(32px, 22px);
 

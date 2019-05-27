@@ -11,7 +11,7 @@
 
   <header class="page-header">
     <div class="page-header__top">
-      <div class="container">
+      <div class="page-header__top-container container">
         <include src="source/components/logo.html"></include>
         <include src="source/components/nav.html"></include>
       </div>
@@ -111,13 +111,13 @@
         </label>
       </div>
       <div class="form__group form__group--no-label form__group--mail form__group--gray-bg container">
-        <h3 class="form__group-title form__group-title--no-label">E-mail</h3>
+        <h3 class="form__group-title form__group-title--mail form__group-title--no-label">E-mail</h3>
         <label class="form__label--icon">
           <input class="form__text-input form__text-input--icon input" type="email" name="email" placeholder="Ваш Email*" pattern="[A-Za-z0-9_]{1,}@[A-Za-z0-9_]{1,}.[A-Za-z]{1,}" required>
           <svg class="form__icon form__icon--mail" width="46" height="32"><use class="form__icon-content" xlink:href="#icon-mail"></use></svg>
         </label>
       </div>
-      <div class="form__group container">
+      <div class="form__group form__group--message container">
         <h3 class="form__group-title form__group-title--message">Доп</h3>
         <textarea class="form__message" name="message" placeholder="Опишите все ваши пожелания к заказу" rows="6"></textarea>
       </div>

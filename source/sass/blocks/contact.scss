@@ -9,12 +9,10 @@
 }
 
 .contact__info {
-  position: relative;
-
   &::before {
     @media (min-width: $tablet-width) {
       @include pseudo;
-      top: -16px;
+      top: -15px;
       right: 3px;
 
       width: 47px;
@@ -23,6 +21,8 @@
       background: url("../img/svg/icon-flag.svg") no-repeat center;
     }
   }
+
+  position: relative;
 }
 
 .contact__title {
@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 }
 
@@ -96,6 +96,10 @@
   padding-bottom: 30px;
 
   vertical-align: top;
+
+  @media (min-width: $tablet-width) {
+    min-width: 77px;
+  }
 }
 
 .contact__value {
