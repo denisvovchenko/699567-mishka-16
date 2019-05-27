@@ -1,0 +1,18 @@
+.pages-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex: 1;
+    padding-left: $tablet-pads;
+  }
+}
+
+.pages-list__item {
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    margin-right: 37px;
+  }
+}
+
+.pages-list__link {
+  padding: 0;
+}

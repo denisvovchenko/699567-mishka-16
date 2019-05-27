@@ -129,6 +129,10 @@
 
   &--mail {
     padding-right: 23px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 0;
+    }
   }
 
   &--no-label {
