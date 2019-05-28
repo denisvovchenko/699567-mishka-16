@@ -2,10 +2,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
-
-  @media (min-width: $desktop-width) {
-    border-bottom: 1px solid $lightBorderColor;
-  }
 }
 
 .pages-list__item {

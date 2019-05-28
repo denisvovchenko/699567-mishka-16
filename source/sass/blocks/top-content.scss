@@ -1,4 +1,6 @@
 .top-content {
+  border-top: 1px solid rgba(#444444, 0.1);
+
   &::after {
     @media (min-width: $tablet-width) {
       content: "";

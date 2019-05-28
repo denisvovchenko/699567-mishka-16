@@ -7,6 +7,10 @@
     padding-bottom: 57px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 44px;
+  }
+
   &--catalog {
     padding-top: 30px;
     padding-bottom: 58px;

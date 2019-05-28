@@ -13,12 +13,21 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 90px;
+  }
 }
 
 .about-us__container {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
   }
 }
 
@@ -52,6 +61,10 @@
     flex-direction: column;
     flex-basis: 50%;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 40%;
   }
 }
 

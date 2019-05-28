@@ -10,6 +10,13 @@
 
     background: url("../img/review@1x.jpg") no-repeat left top;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-bottom: 153px;
+
+    background-position-x: 50px;
+  }
 }
 
 .reviews__container {
@@ -20,6 +27,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
   }
 }
 
@@ -34,6 +45,10 @@
 
 .reviews__slider {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .reviews__list {
@@ -54,6 +69,11 @@
 
     font-size: 17px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+    margin-bottom: 39px;
+  }
 }
 
 .reviews__author {
@@ -69,6 +89,10 @@
     margin-bottom: 4px;
 
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
   }
 }
 
@@ -114,6 +138,10 @@
 
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    bottom: 34px;
+  }
 }
 
 .reviews__btn {
@@ -143,5 +171,9 @@
     order: -1;
     min-width: 175px;
     margin: 2px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 9px;
   }
 }
