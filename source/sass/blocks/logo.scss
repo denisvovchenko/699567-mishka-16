@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     @include size(113px, 46px);
   }
+
+  @media (min-width: $desktop-width) {
+    @include size(149px, 72px);
+  }
 }
 
 .logo[href] {

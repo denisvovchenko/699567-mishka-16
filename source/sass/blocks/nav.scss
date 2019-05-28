@@ -13,6 +13,10 @@
     font-size: 15px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+  }
 }
 
 .nav__logo {
@@ -30,6 +34,16 @@
     align-items: center;
     padding: 0 0 0 $tablet-pads;
     margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: none;
+    display: flex;
+    justify-content: center;
+    width: 325px;
+    min-width: 0;
+    padding: 8px 25px 8px 0;
+    margin: auto;
   }
 }
 
@@ -73,10 +87,16 @@
   @media (min-width: $tablet-width) {
     order: 1;
     min-width: 50%;
+    padding-left: $tablet-pads;
   }
 
   @media (min-width: $desktop-width) {
     order: -1;
+    flex: 1;
+    justify-content: flex-end;
+    min-width: 425px;
+    padding: 0;
+    padding-left: $tablet-pads;
   }
 }
 
@@ -84,6 +104,13 @@
   @media (min-width: $tablet-width) {
     width: 398px;
     padding-right: $tablet-pads;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 1;
+    justify-content: flex-start;
+    min-width: 400px;
+    width: auto;
   }
 }
 
@@ -133,6 +160,18 @@
   }
 }
 
+.nav__list--promo {
+  @media (min-width: $desktop-width) {
+    width: $desktop-width / 2;
+    padding-left: $tablet-pads;
+  }
+}
+
 .nav__free-shipping {
   order: 1;
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width / 2;
+    justify-content: flex-end;
+  }
 }

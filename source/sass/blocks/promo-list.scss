@@ -5,3 +5,12 @@
     display: flex;
   }
 }
+
+.promo-list__item {
+  &:last-child {
+    margin-right: 0;
+  }
+
+  padding-top: 17px;
+  margin-right: 61px;
+}
