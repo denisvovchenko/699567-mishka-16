@@ -40,10 +40,9 @@
     flex: none;
     display: flex;
     justify-content: center;
-    width: 325px;
+    width: 149px;
     min-width: 0;
-    padding: 8px 25px 8px 0;
-    margin: auto;
+    padding: 8px 0;
   }
 }
 
@@ -92,10 +91,12 @@
 
   @media (min-width: $desktop-width) {
     order: -1;
-    flex: 1;
+    flex: none;
     justify-content: flex-end;
-    min-width: 425px;
+    min-width: 0;
+    width: calc(50% - 75px);
     padding: 0;
+    padding-right: 75px;
     padding-left: $tablet-pads;
   }
 }
@@ -107,10 +108,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex: 1;
+    flex: none;
     justify-content: flex-start;
-    min-width: 400px;
-    width: auto;
+    min-width: 0;
+    width: calc(50% - 74px);
+    padding-left: 101px;
   }
 }
 
@@ -160,18 +162,30 @@
   }
 }
 
+.nav__container {
+  order: 1;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: $desktop-width;
+    padding: 0 $tablet-pads;
+  }
+}
+
 .nav__list--promo {
   @media (min-width: $desktop-width) {
-    width: $desktop-width / 2;
-    padding-left: $tablet-pads;
+    flex: 1;
   }
 }
 
 .nav__free-shipping {
-  order: 1;
+  @media (min-width: $tablet-width) {
+    padding-right: $tablet-pads;
+  }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width / 2;
+    flex: 1;
     justify-content: flex-end;
+    padding: 0;
   }
 }

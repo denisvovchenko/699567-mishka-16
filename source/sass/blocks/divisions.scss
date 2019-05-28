@@ -6,8 +6,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 668px;
+    width: 100%;
+    padding: 0 $tablet-pads;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
   }
 }
 
@@ -78,7 +83,7 @@
 
   &--interior {
     &::before {
-      right: 6px;
+      right: 36px;
 
       @include size(40px, 62px);
 
@@ -86,29 +91,38 @@
 
       @media (min-width: $tablet-width) {
         top: 30px;
-        right: 0;
+        right: 36px;
       }
     }
   }
 
   &--toys {
     &::before {
-      right: -3px;
+      right: 35px;
 
       @include size(60px);
 
       background-image: url("../img/svg/toy.svg");
 
       @media (min-width: $tablet-width) {
+        top: 35px;
+      }
+
+      @media (min-width: $desktop-width) {
         top: 32px;
       }
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 28px 85px 42px 0;
+    max-width: none;
+    padding: 28px 85px 42px 37px;
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
   }
 }
