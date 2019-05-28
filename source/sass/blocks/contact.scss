@@ -6,11 +6,15 @@
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 50% 0 170px;
+  }
 }
 
-.contact__inner {
+.contact__info-wrapper {
   @media (min-width: $desktop-width) {
-    position: relative;
+    width: auto;
   }
 }
 
@@ -25,6 +29,12 @@
       height: 81px;
 
       background: url("../img/svg/flag.svg") no-repeat center;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: auto;
+      left: -107px;
+      top: -8px;
     }
   }
 
@@ -57,10 +67,14 @@
 
     font-size: 17px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 79px;
+  }
 }
 
 .contact__description tbody {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     display: flex;
   }
 }
@@ -130,13 +144,25 @@
     background: url("../img/svg/icon-map-pin.svg") no-repeat center;
 
     @media (min-width: $tablet-width) {
-      top: 190px;
-      left: 390px;
+      @include center(190px, 390px);
+    }
+
+    @media (min-width: $tablet-width) {
+      @include center(196px, 271px);
     }
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 50%;
+    padding-right: 50px;
   }
 }
 
@@ -149,6 +175,12 @@
 .contact__link-wrapper {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 0 0 0 55px;
+    justify-content: flex-start;
+  }
 }
 
 .contact__link {
@@ -157,5 +189,9 @@
   @media (min-width: $tablet-width) {
     width: auto;
     min-width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
