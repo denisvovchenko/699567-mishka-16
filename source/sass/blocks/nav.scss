@@ -163,7 +163,13 @@
 }
 
 .nav__container {
-  order: 1;
+  @media (min-width: $tablet-width) {
+    order: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: $tablet-pads;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -179,10 +185,6 @@
 }
 
 .nav__free-shipping {
-  @media (min-width: $tablet-width) {
-    padding-right: $tablet-pads;
-  }
-
   @media (min-width: $desktop-width) {
     flex: 1;
     justify-content: flex-end;
