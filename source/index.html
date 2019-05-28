@@ -8,30 +8,25 @@
   <body class="page page--index">
 
     <include src="source/components/sprite.html"></include>
+    <include src="source/components/header.html"></include>
 
-    <header class="page-header">
-      <div class="page-header__top">
-        <include src="source/components/nav.html"></include>
+    <section class="top-content top-content--index">
+      <p class="slogan">
+        Милые штуки ручной<br> работы для дома
+      </p>
+
+      <div class="page-header__divisions divisions">
+        <h2 class="visually-hidden">Разделы магазина</h2>
+        <ul class="divisions__list">
+          <li class="divisions__item">
+            <a class="divisions__link divisions__link--interior" href="#"><div class="divisions__text divisions__text--interior container">Предметы интерьера</div></a>
+          </li>
+          <li class="divisions__item">
+            <a class="divisions__link divisions__link--toys" href="#"><div class="divisions__text divisions__text--toys container">Детские игрушки</div></a>
+          </li>
+        </ul>
       </div>
-
-      <div class="page-header__body">
-        <div class="container">
-          <p class="page-header__slogan">Милые штуки ручной<br> работы для дома</p>
-        </div>
-
-        <section class="page-header__divisions divisions">
-          <h2 class="visually-hidden">Разделы магазина</h2>
-          <ul class="divisions__list">
-            <li class="divisions__item">
-              <a class="divisions__link divisions__link--interior" href="#"><div class="divisions__text divisions__text--interior container">Предметы интерьера</div></a>
-            </li>
-            <li class="divisions__item">
-              <a class="divisions__link divisions__link--toys" href="#"><div class="divisions__text divisions__text--toys container">Детские игрушки</div></a>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </header>
+    </section>
 
     <main class="page-main">
       <h1 class="visually-hidden">Магазин детских игрушек и товаров для дома "Мишка"</h1>

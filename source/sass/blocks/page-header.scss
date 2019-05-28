@@ -1,22 +1,9 @@
 .page-header {
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-
-      width: 100%;
-      height: 24px;
-
-      background: url("../img/svg/bg-zigzag-fill.svg") repeat-x center;
-      background-size: contain;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     position: relative;
+    z-index: 1;
+
+    margin-bottom: -41px;
   }
 }
 
@@ -31,34 +18,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-.page-header__body {
-  background: $lightText url("../img/mobile/hero-mobile@1x.jpg") no-repeat top;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -41px;
-
-    background-image: url("../img/tablet/hero-tablet@1x.jpg");
-  }
-}
-
-.page-header__slogan {
-  padding: 70px 0 122px;
-  margin: 0;
-
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 30px;
-  text-align: center;
-
-  color: $darkText;
-
-  @media (min-width: $tablet-width) {
-    padding: 153px 0 373px;
-
-    font-size: 43px;
-    line-height: 50px;
   }
 }

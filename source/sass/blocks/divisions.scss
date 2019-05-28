@@ -82,7 +82,7 @@
 
       @include size(40px, 62px);
 
-      background-image: url("../img/svg/icon-interior.svg");
+      background-image: url("../img/svg/interior.svg");
 
       @media (min-width: $tablet-width) {
         top: 30px;
@@ -97,7 +97,7 @@
 
       @include size(60px);
 
-      background-image: url("../img/svg/icon-toy.svg");
+      background-image: url("../img/svg/toy.svg");
 
       @media (min-width: $tablet-width) {
         top: 32px;

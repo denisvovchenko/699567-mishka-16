@@ -1,0 +1,30 @@
+.top-content {
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      width: 100%;
+      height: 24px;
+
+      background: url("../img/svg/bg-zigzag-fill.svg") repeat-x center;
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  &--index {
+    background: $lightText url("../img/mobile/hero-mobile@1x.jpg") no-repeat center top -19px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/tablet/hero-tablet@1x.jpg");
+      background-position-y: 0;
+    }
+  }
+}

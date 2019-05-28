@@ -269,7 +269,7 @@
   }
 
   .form__input--hidden:checked + &--checkbox::after {
-    background: url("../img/svg/icon-tick.svg") no-repeat center;
+    background: url("../img/svg/tick.svg") no-repeat center;
     background-size: 22px 16px;
 
     @media (min-width: $tablet-width) {

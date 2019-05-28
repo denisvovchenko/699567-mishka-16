@@ -1,3 +1,7 @@
 .promo-list {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
