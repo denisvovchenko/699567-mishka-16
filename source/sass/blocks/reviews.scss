@@ -12,14 +12,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    padding-top: 70px;
-    padding-bottom: 153px;
+    padding: 0;
     margin-bottom: 13px;
-    margin-left: auto;
-    margin-right: auto;
 
-    background-position-x: 50px;
+    // background-position-x: 50px;
+    background: none;
   }
 }
 
@@ -34,7 +31,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
+    padding: 70px 50px 153px 225px;
+
+    background: url("../img/review@1x.jpg") no-repeat left 50px top;
   }
 }
 

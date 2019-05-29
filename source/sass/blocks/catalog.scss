@@ -8,6 +8,11 @@
 
 .catalog__list {
   @include resetList;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0 -25px;
+  }
 }
 
 .catalog__item {
@@ -20,5 +25,9 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 25px;
   }
 }
