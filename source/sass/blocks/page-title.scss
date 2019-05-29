@@ -21,6 +21,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 272px;
+    padding-top: 0;
+    padding-bottom: 30px;
+
     font-size: 53px;
     line-height: 57px;
   }

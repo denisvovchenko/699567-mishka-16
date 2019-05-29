@@ -14,10 +14,6 @@
     }
   }
 
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-
   position: relative;
 
   margin-bottom: 29px;
@@ -29,6 +25,10 @@
     margin-bottom: 53px;
 
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 225px;
   }
 
   &--radio {
@@ -46,6 +46,10 @@
       padding-top: 65px;
       padding-bottom: 11px;
       margin-bottom: 58px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 50px;
     }
   }
 
@@ -85,6 +89,16 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 53px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.form__container {
+  @media (min-width: $desktop-width) {
+    background: #f1f1f1;
   }
 }
 
@@ -109,6 +123,11 @@
     margin: 0;
 
     background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 175px;
+    padding-left: 60px;
   }
 
   &--checkbox {
@@ -155,10 +174,18 @@
     flex-basis: 75%;
   }
 
+  @media (min-width: $desktop-width) {
+    flex-basis: 700px;
+  }
+
   &--checkbox {
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 790px;
     }
   }
 }
@@ -181,10 +208,14 @@
       flex-basis: 50%;
       margin-bottom: 58px;
     }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 33.3333%;
+    }
   }
 
   &--checkbox:nth-child(even) {
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       padding-left: 11px;
     }
   }
@@ -299,6 +330,10 @@
 
     @media (min-width: $tablet-width) {
       flex-basis: 75%;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 700px;
     }
   }
 
@@ -423,12 +458,16 @@
     @media (min-width: $tablet-width) {
       right: 26px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: 7px;
+    }
   }
 
   &--mail {
     right: -3px;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       right: 15px;
     }
   }
@@ -447,5 +486,10 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    padding: 0;
   }
 }

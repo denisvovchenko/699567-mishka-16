@@ -58,7 +58,6 @@
 .divisions__text {
   &::before {
     @include pseudo;
-    top: 23px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -84,7 +83,8 @@
 
   &--interior {
     &::before {
-      right: 36px;
+      top: 23px;
+      right: 7px;
 
       @include size(40px, 62px);
 
@@ -99,14 +99,16 @@
 
   &--toys {
     &::before {
-      right: 35px;
+      right: -3px;
+      top: 21px;
 
       @include size(60px);
 
       background-image: url("../img/svg/toy.svg");
 
       @media (min-width: $tablet-width) {
-        top: 35px;
+        top: 33px;
+        right: 34px;
       }
 
       @media (min-width: $desktop-width) {
