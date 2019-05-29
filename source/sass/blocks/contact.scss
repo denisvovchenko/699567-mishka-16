@@ -6,9 +6,14 @@
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }
+}
 
+.contact__container {
   @media (min-width: $desktop-width) {
-    padding: 70px 50% 0 170px;
+    position: relative;
+    width: $desktop-width;
+    padding: 70px 575px 0 170px;
+    margin: 0 auto;
   }
 }
 
