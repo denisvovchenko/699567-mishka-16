@@ -1,9 +1,22 @@
 .catalog {
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .catalog__list {
   @include resetList;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: 0 -25px;
+  }
 }
 
 .catalog__item {
@@ -13,4 +26,12 @@
 
   padding: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 25px;
+  }
 }

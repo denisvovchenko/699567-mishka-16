@@ -6,18 +6,45 @@
   border: 1px solid $lightBorderColor;
 
   @include transition;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 45px;
+
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    padding: 46px 60px 60px 758px;
+
+    border: 1px solid $lightBorderColor;
+  }
 }
 
 .production__title {
   &::before {
     @include pseudo;
     @include center-y;
-    left: 3px;
+    left: 0;
 
     @include size(32px, 22px);
 
-    background: url("../img/svg/icon-video.svg") no-repeat center;
+    background: url("../img/svg/video.svg") no-repeat center;
     background-size: 32px;
+
+    @media (min-width: $tablet-width) {
+      left: 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      top: 0;
+
+      transform: none;
+    }
   }
 
   position: relative;
@@ -27,12 +54,42 @@
 
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 65px;
+    margin-bottom: 32px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-top: 49px;
+  }
 }
 
 .production__video {
   position: relative;
 
   margin: 0 -34px 27px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+
+    margin: 0 -41px 38px;
+
+    border-bottom: 1px solid $lightBorderColor;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin: 0;
+
+    border: none;
+  }
 }
 
 .production__video-img {
@@ -66,9 +123,22 @@
   font-weight: 400;
   line-height: 24px;
 
-  color: #444444;
+  color: $grayText;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .production__btn {
+  width: 100%;
+
   font-size: 17px;
 }

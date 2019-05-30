@@ -1,13 +1,17 @@
-.block-title {
+.slogan {
+  padding: 70px $mobile-pads 122px;
   margin: 0;
 
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
   line-height: 30px;
+  text-align: center;
 
   color: $darkText;
 
   @media (min-width: $tablet-width) {
+    padding: 153px 0 373px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -15,5 +19,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+
+    padding-bottom: 359px;
   }
 }

@@ -1,0 +1,12 @@
+.free-shipping {
+  display: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+
+    font-weight: 400;
+  }
+}

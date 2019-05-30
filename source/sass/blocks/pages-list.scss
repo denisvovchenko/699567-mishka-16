@@ -1,0 +1,43 @@
+.pages-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.pages-list__item {
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    margin-right: 37px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0;
+    margin-right: 34px;
+  }
+}
+
+.pages-list__link {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+
+    font-size: 17px;
+  }
+}
+
+.pages-list__item:not(:last-child) .pages-list__link {
+  @media (min-width: $desktop-width) {
+    padding-right: 36px;
+
+    border-right: 1px solid $lightBorderColor;
+  }
+}

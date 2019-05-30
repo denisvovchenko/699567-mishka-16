@@ -2,4 +2,13 @@
   width: $mobile-width;
   padding: 0 $mobile-pads;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 $tablet-pads;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }

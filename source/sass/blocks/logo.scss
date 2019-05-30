@@ -2,13 +2,17 @@
   display: block;
 
   @include size(86px, 35px);
+
+  @media (min-width: $tablet-width) {
+    @include size(113px, 46px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include size(149px, 72px);
+  }
 }
 
 .logo[href] {
   @include hoverOpacity;
   @include activeOpacity;
-}
-
-.page-header__logo {
-  margin: 0 auto;
 }

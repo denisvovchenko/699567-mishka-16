@@ -6,17 +6,66 @@
   line-height: 20px;
 
   color: $darkText;
+
+  @media (min-width: $tablet-width) {
+    padding: 48px 0 83px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 90px;
+  }
+}
+
+.about-us__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+  }
 }
 
 .about-us__title {
   margin: 0 0 33px;
 
-  font-size: 25px;
-  line-height: 30px;
+  @media (max-width: $tablet-width - 1) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 
 .about-us__list {
+  &:last-child {
+    margin-top: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+  }
+
   @include resetList;
+
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 40%;
+  }
 }
 
 .about-us__item {
@@ -34,13 +83,13 @@
 
     @include size(32px, 37px);
 
-    background-image: url("../img/svg/icon-feature-flower.svg");
+    background-image: url("../img/svg/feature-flower.svg");
   }
 
   &--style::before {
     @include size(47px, 27px);
 
-    background-image: url("../img/svg/icon-feature-money.svg");
+    background-image: url("../img/svg/feature-money.svg");
   }
 
   &--likes::before {
@@ -48,7 +97,7 @@
 
     @include size(34px, 27px);
 
-    background-image: url("../img/svg/icon-feature-heart.svg");
+    background-image: url("../img/svg/feature-heart.svg");
   }
 
   &--handmade::before {
@@ -56,7 +105,7 @@
 
     @include size(35px, 34px);
 
-    background-image: url("../img/svg/icon-feature-ball.svg");
+    background-image: url("../img/svg/feature-ball.svg");
   }
 
   &--support::before {
@@ -64,7 +113,7 @@
 
     @include size(55px, 23px);
 
-    background-image: url("../img/svg/icon-feature-rocket.svg");
+    background-image: url("../img/svg/feature-rocket.svg");
   }
 
   &--package::before {
@@ -72,7 +121,7 @@
 
     @include size(33px, 32px);
 
-    background-image: url("../img/svg/icon-feature-gift.svg");
+    background-image: url("../img/svg/feature-gift.svg");
   }
 
   &:last-child {
@@ -83,4 +132,8 @@
 
   padding-top: 53px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
 }

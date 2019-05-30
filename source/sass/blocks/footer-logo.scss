@@ -1,0 +1,12 @@
+.footer-logo {
+  &:hover {
+    fill: $mainColorDarker;
+  }
+
+  &:active {
+    fill: $mainColorDarker;
+    opacity: 0.3;
+  }
+
+  @include size(102px, 34px);
+}

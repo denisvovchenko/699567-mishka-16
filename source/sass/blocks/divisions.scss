@@ -3,6 +3,23 @@
   margin: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+    padding: 0 $tablet-pads;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+  }
+}
+
+.divisions__item {
+  @media (min-width: $tablet-width) {
+    flex-basis: 50%;
+  }
 }
 
 .divisions__link {
@@ -23,9 +40,6 @@
 
   display: block;
 
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 24px;
   text-decoration: none;
 
   color: $lightText;
@@ -44,7 +58,6 @@
 .divisions__text {
   &::before {
     @include pseudo;
-    top: 23px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -62,24 +75,57 @@
   position: relative;
   max-width: 260px;
   padding: 25px 85px 30px 0;
+  margin: 0 auto;
+
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
 
   &--interior {
     &::before {
-      right: 6px;
+      top: 23px;
+      right: 7px;
 
       @include size(40px, 62px);
 
-      background-image: url("../img/svg/icon-interior.svg");
+      background-image: url("../img/svg/interior.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+        right: 36px;
+      }
     }
   }
 
   &--toys {
     &::before {
       right: -3px;
+      top: 21px;
 
       @include size(60px);
 
-      background-image: url("../img/svg/icon-toy.svg");
+      background-image: url("../img/svg/toy.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 33px;
+        right: 34px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 32px;
+      }
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+    padding: 28px 85px 42px 37px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
   }
 }
