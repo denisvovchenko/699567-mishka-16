@@ -1,0 +1,115 @@
+.modal {
+  width: 100%;
+  max-width: 566px;
+  padding: 30px $mobile-pads 46px;
+  margin: 0;
+
+  text-align: center;
+
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(#000000, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding-top: 33px;
+  }
+}
+
+.modal__title {
+  margin: 0 0 12px;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__text {
+  margin: 0 0 23px;
+
+  font-size: 15px;
+  line-height: 30px;
+
+  color: $grayText;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+
+    font-size: 17px;
+  }
+}
+
+.modal__size-list {
+  @include resetList;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 31px;
+}
+
+.modal__size-item {
+  &:last-child {
+    margin-right: 0;
+  }
+
+  margin-right: 7px;
+}
+
+.modal__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include size(82px, 52px);
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+
+  color: $grayText;
+  border: 2px solid rgba($grayText, 0.1);
+
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    @include size(112px, 52px);
+  }
+}
+
+.modal__label:hover {
+  border-color: rgba($grayText, 0.3);
+}
+
+.modal__input:checked + .modal__label {
+  border-color: $mainColor;
+}
+
+.modal__btn {
+  &:hover {
+    background: $mainColorDarker;
+  }
+
+  &:active {
+    color: rgba($lightText, 0.5);
+    background: $mainColorDarker;
+  }
+
+  width: 100%;
+
+  color: $lightText;
+  background: $mainColor;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    min-width: 350px;
+  }
+}

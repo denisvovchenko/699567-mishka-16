@@ -17,3 +17,14 @@ if ( body.classList.contains('page--index') ) {
 
   indexLink.removeAttribute('href', '');
 }
+
+let openModalBtns = document.querySelectorAll('.js-open-modal');
+let overlay = document.querySelector('.overlay');
+
+openModalBtns.forEach(function(btn) {
+  btn.addEventListener('click', function(evt) {
+    evt.preventDefault();
+
+    overlay.classList.add('overlay--show');
+  });
+});
