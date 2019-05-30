@@ -140,22 +140,6 @@
 
   margin-bottom: 39px;
 
-  &::after {
-    content: "";
-
-    @include center(195px, 171px);
-    @include size(67px, 100px);
-
-    background: url("../img/svg/icon-map-pin.svg") no-repeat center;
-
-    @media (min-width: $tablet-width) {
-      @include center(190px, 390px);
-    }
-
-    @media (min-width: $tablet-width) {
-      @include center(196px, 271px);
-    }
-  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
@@ -171,10 +155,8 @@
   }
 }
 
-.contact__map-img {
-  display: block;
-  height: 457px;
-  object-fit: cover;
+.contact__iframe {
+  width: 100%;
 }
 
 .contact__link-wrapper {
