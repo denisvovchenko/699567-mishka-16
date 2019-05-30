@@ -85,6 +85,10 @@
   }
 }
 
+.no-js .nav__toggle {
+  display: none;
+}
+
 .nav__list {
   display: none;
 
@@ -95,7 +99,14 @@
   }
 }
 
+.no-js .nav__list--pages,
+.no-js .nav__list--interface {
+  display: block;
+}
+
 .nav__list--pages {
+  border-top: 1px solid $lightBorderColor;
+
   @media (min-width: $tablet-width) {
     flex: -1;
     margin-right: auto;

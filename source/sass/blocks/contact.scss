@@ -66,6 +66,7 @@
   line-height: 30px;
 
   color: $grayText;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;
@@ -118,7 +119,7 @@
 
 .contact__key {
   min-width: 75px;
-  padding-bottom: 30px;
+  padding: 0 0 30px;
 
   vertical-align: top;
 
@@ -128,6 +129,8 @@
 }
 
 .contact__value {
+  padding: 0;
+
   vertical-align: top;
 }
 
@@ -157,6 +160,8 @@
 
 .contact__iframe {
   width: 100%;
+
+  border: none;
 }
 
 .contact__link-wrapper {

@@ -1,13 +1,9 @@
 .reviews {
-  @include zigzagLine;
-
   position: relative;
 
-  padding: 25px 0 50px;
+
 
   @media (min-width: $tablet-width) {
-    padding: 77px 0 103px;
-
     background: url("../img/review@1x.jpg") no-repeat left top;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -25,13 +21,20 @@
 }
 
 .reviews__container {
-  @media (min-width: $tablet-width) {
-    position: relative;
+  position: relative;
 
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  @include zigzagLine;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    padding-top: 77px;
+    padding-bottom: 103px;
   }
 
   @media (min-width: $desktop-width) {

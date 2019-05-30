@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 176px;
+  min-height: 176px;
   padding-bottom: 7px;
   margin: 0;
 
@@ -13,17 +13,22 @@
   background-color: #f1f1f1;
 
   @media (min-width: $tablet-width) {
-    height: 236px;
-    padding-top: 10px;
+    width: $tablet-width;
+    min-height: 236px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
 
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 272px;
-    padding-top: 0;
-    padding-bottom: 30px;
+    width: $desktop-width;
+    min-height: 272px;
+    padding-top: 80px;
+    padding-bottom: 109px;
+    margin: 0 auto;
 
     font-size: 53px;
     line-height: 57px;

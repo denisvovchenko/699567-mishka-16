@@ -1,4 +1,7 @@
 let body = document.querySelector('.page');
+
+body.classList.remove('no-js');
+
 let navToggle = document.querySelector('.js-nav__toggle');
 let navLists = document.querySelectorAll('.js-nav__list');
 
