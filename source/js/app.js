@@ -13,9 +13,12 @@ navToggle.addEventListener('click', (evt) => {
 });
 
 if ( body.classList.contains('page--index') ) {
-  let indexLink = document.querySelector('.logo');
+  let indexLinks = document.querySelectorAll('.logo, .js-page-footer__logo');
 
-  indexLink.removeAttribute('href', '');
+
+  indexLinks.forEach((link) => {
+    link.removeAttribute('href', '');
+  });
 }
 
 let openModalBtns = document.querySelectorAll('.js-open-modal');
