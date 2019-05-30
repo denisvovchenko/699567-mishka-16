@@ -57,9 +57,12 @@
                 </tr>
               </table>
               <picture class="top-product__picture">
-                  <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop@1x.jpg 1x, img/desktop/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop@1x.webp 1x, img/desktop/triple-set-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1150px)" srcset="img/desktop/triple-set-desktop@1x.jpg 1x, img/desktop/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.webp 1x, img/tablet/triple-set-tablet@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 768px)" srcset="img/tablet/triple-set-tablet@1x.jpg 1x, img/tablet/triple-set-tablet@2x.jpg 2x">
-                <img class="top-product__img" src="img/mobile/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+                <source srcset="img/mobile/triple-set-mobile@1x.webp 1x, img/mobile/triple-set-mobile@2x.webp 2x" type="image/webp">
+                <img class="top-product__img" src="img/mobile/triple-set-mobile@1x.jpg" srcset="img/mobile/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
               </picture>
               <p class="top-product__price">Цена: 990 руб.</p>
               <a class="top-product__btn js-open-modal btn" href="#">Заказать</a>
@@ -132,12 +135,8 @@
             </div>
           </div>
 
-          <div class="contact__map map">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/desktop/map-desktop@1x.jpg 1x, img/desktop/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/tablet/map-tablet@1x.jpg 1x, img/tablet/map-tablet@2x.jpg 2x">
-              <img class="contact__map-img" src="img/mobile/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
-            </picture>
+          <div class="contact__map">
+            <iframe class="contact__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1089.7474279224812!2d30.321831557025018!3d59.938684432817105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca18e1d7%3A0xe1b646f62fb95e7a!2sMISHKA!5e0!3m2!1scs!2scz!4v1559197644543!5m2!1scs!2scz" width="600" height="450" frameborder="0" allowfullscreen></iframe>
           </div>
 
           <div class="contact__link-wrapper container">
