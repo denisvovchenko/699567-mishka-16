@@ -22,9 +22,23 @@ let openModalBtns = document.querySelectorAll('.js-open-modal');
 let overlay = document.querySelector('.overlay');
 
 openModalBtns.forEach(function(btn) {
-  btn.addEventListener('click', function(evt) {
+  btn.addEventListener('click', (evt) => {
     evt.preventDefault();
 
     overlay.classList.add('overlay--show');
   });
+});
+
+overlay.addEventListener('click', (evt) => {
+  let target = evt.target;
+
+  if (target.classList.contains('overlay--show')) {
+    overlay.classList.remove('overlay--show');
+  }
+});
+
+document.addEventListener('keydown', (evt) => {
+  if (evt.keyCode === 27 && overlay.classList.contains('overlay--show')) {
+    overlay.classList.remove('overlay--show');
+  }
 });
